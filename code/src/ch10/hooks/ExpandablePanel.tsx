@@ -1,8 +1,8 @@
-import React from "react";
-import { PanelProps } from "./types";
+import React from 'react';
+import { PanelProps } from './types';
 
-import useAutoClose from "./useAutoClose";
-import useKeyboard from "./useKeyboard";
+import useAutoClose from './useAutoClose';
+import useKeyboard from './useKeyboard';
 
 const ExpandablePanel = ({ heading, content }: PanelProps) => {
   const { isOpen, toggle } = useAutoClose(2000);

@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 const pizzas = [
-  "Margherita Pizza",
-  "Pepperoni Pizza",
-  "Veggie Supreme Pizza",
-  "Chicken BBQ Pizza",
-  "Spicy Meat Feast Pizza",
-  "Pasta Primavera",
-  "Caesar Salad",
-  "Chocolate Lava Cake",
+  'Margherita Pizza',
+  'Pepperoni Pizza',
+  'Veggie Supreme Pizza',
+  'Chicken BBQ Pizza',
+  'Spicy Meat Feast Pizza',
+  'Pasta Primavera',
+  'Caesar Salad',
+  'Chocolate Lava Cake',
 ];
 export const MenuList = ({
   onAddMenuItem,

@@ -1,4 +1,4 @@
-import { Item } from "../../types";
+import { Item } from '../../types';
 
 function PriceListView({ items }: { items: Item[] }) {
   // Business logic within the view

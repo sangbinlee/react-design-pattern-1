@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { ArticleType } from "./types";
-import Article from "./Article";
+import { useEffect, useState } from 'react';
+import { ArticleType } from './types';
+import Article from './Article';
 
 const ArticleDetail = ({ id }: { id: string }) => {
   const [article, setArticle] = useState<ArticleType>();

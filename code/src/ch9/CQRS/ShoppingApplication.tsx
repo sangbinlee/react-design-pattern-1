@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { Item } from "./type";
-import { ShoppingCartProvider } from "./ShoppingCartContext";
+import { useState } from 'react';
+import { Item } from './type';
+import { ShoppingCartProvider } from './ShoppingCartContext';
 
 const items: Item[] = [
   {
-    id: "p1",
-    name: "iPad",
+    id: 'p1',
+    name: 'iPad',
     price: 666,
   },
   {
-    id: "p2",
-    name: "iPhone",
+    id: 'p2',
+    name: 'iPhone',
     price: 777,
   },
 ];

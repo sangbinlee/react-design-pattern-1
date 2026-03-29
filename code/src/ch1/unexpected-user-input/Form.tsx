@@ -1,11 +1,11 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState } from 'react';
 
 const Form = () => {
-  const [value, setValue] = useState<string>("");
+  const [value, setValue] = useState<string>('');
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const inputValue = event.target.value;
-    const sanitizedValue = inputValue.replace(/[^\w\s]/gi, "");
+    const sanitizedValue = inputValue.replace(/[^\w\s]/gi, '');
     setValue(sanitizedValue);
   };
 

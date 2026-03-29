@@ -1,5 +1,5 @@
-import InteractionContext from "./InteractionContext";
-import Button from "./AnalyticsButton";
+import InteractionContext from './InteractionContext';
+import Button from './AnalyticsButton';
 
 const FormApp = () => {
   const context = {
@@ -10,7 +10,7 @@ const FormApp = () => {
   };
 
   const onClick = () => {
-    console.log("submit");
+    console.log('submit');
   };
 
   return (

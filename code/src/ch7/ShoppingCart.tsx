@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const ShoppingCart = ({ cartItems }: { cartItems: string[] }) => {
   return (
@@ -8,7 +8,7 @@ export const ShoppingCart = ({ cartItems }: { cartItems: string[] }) => {
           <li key={item}>{item}</li>
         ))}
       </ol>
-      <button disabled={cartItems.length === 0}>Place my order</button>
+      <button disabled={cartItems.length === 0}>Place my order 뭐야?</button>
     </div>
   );
 };

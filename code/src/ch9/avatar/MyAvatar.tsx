@@ -1,5 +1,5 @@
-import Avatar from "./Avatar";
-import Tooltip from "./Tooltip";
+import Avatar from './Avatar';
+import Tooltip from './Tooltip';
 
 const MyAvatar = () => (
   <Tooltip name="Juntao Qiu" role="Software Engineer">

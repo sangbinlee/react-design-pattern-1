@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { checkAuthorization } from "./withAuthorization";
+import React, { useEffect, useState } from 'react';
+import { checkAuthorization } from './withAuthorization';
 
 const Login = () => <div>Login</div>;
 

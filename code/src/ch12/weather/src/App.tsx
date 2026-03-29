@@ -1,19 +1,19 @@
-import React, { useEffect } from "react";
-import "./App.css";
-import { SearchResultItemType } from "./models/SearchResultItemType";
-import { SearchCityInput } from "./search/SearchCityInput";
+import React, { useEffect } from 'react';
+import './App.css';
+import { SearchResultItemType } from './models/SearchResultItemType';
+import { SearchCityInput } from './search/SearchCityInput';
 import {
   fetchCityWeatherData,
   useFetchCityWeather,
-} from "./weather/useFetchCityWeather";
-import { WeatherList } from "./weather/WeatherList";
+} from './weather/useFetchCityWeather';
+import { WeatherList } from './weather/WeatherList';
 
 function App() {
   const { cities, setCities, fetchCityWeather } = useFetchCityWeather();
 
   const onItemClick = (item: SearchResultItemType) => {
     setTimeout(() => {
-      const items = JSON.parse(localStorage.getItem("favoriteItems") || "[]");
+      const items = JSON.parse(localStorage.getItem('favoriteItems') || '[]');
 
       const newItem = {
         name: item.city,
@@ -22,8 +22,8 @@ function App() {
       };
 
       localStorage.setItem(
-        "favoriteItems",
-        JSON.stringify([newItem, ...items], null, 2)
+        'favoriteItems',
+        JSON.stringify([newItem, ...items], null, 2),
       );
     }, 0);
 
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     const hydrate = async () => {
-      const items = JSON.parse(localStorage.getItem("favoriteItems") || "[]");
+      const items = JSON.parse(localStorage.getItem('favoriteItems') || '[]');
 
       const promises = items.map((item: any) => {
         const searchResultItem = new SearchResultItemType(item);

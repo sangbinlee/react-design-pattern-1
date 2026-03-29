@@ -24,14 +24,7 @@
     "name": "Veggie Supreme Pizza",
     "price": 14.99,
     "description": "Loaded with fresh vegetables and mozzarella",
-    "ingredients": [
-      "Tomato Sauce",
-      "Mozzarella Cheese",
-      "Bell Peppers",
-      "Mushrooms",
-      "Olives",
-      "Onions"
-    ],
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Bell Peppers", "Mushrooms", "Olives", "Onions"],
     "allergyTags": ["Dairy"],
     "calories": 200,
     "category": "Pizza"
@@ -41,12 +34,7 @@
     "name": "Chicken BBQ Pizza",
     "price": 15.99,
     "description": "Grilled chicken with BBQ sauce and red onions",
-    "ingredients": [
-      "BBQ Sauce",
-      "Mozzarella Cheese",
-      "Grilled Chicken",
-      "Red Onions"
-    ],
+    "ingredients": ["BBQ Sauce", "Mozzarella Cheese", "Grilled Chicken", "Red Onions"],
     "allergyTags": ["Dairy"],
     "calories": 350,
     "category": "Pizza"
@@ -56,13 +44,7 @@
     "name": "Spicy Meat Feast Pizza",
     "price": 16.99,
     "description": "A blend of spicy meats with hot peppers",
-    "ingredients": [
-      "Tomato Sauce",
-      "Mozzarella Cheese",
-      "Pepperoni",
-      "Sausage",
-      "Hot Peppers"
-    ],
+    "ingredients": ["Tomato Sauce", "Mozzarella Cheese", "Pepperoni", "Sausage", "Hot Peppers"],
     "allergyTags": ["Dairy", "Pork", "Spicy"],
     "calories": 400,
     "category": "Pizza"
@@ -72,12 +54,7 @@
     "name": "Pasta Primavera",
     "price": 8.99,
     "description": "Pasta with seasonal vegetables and olive oil",
-    "ingredients": [
-      "Pasta",
-      "Seasonal Vegetables",
-      "Olive Oil",
-      "Parmesan Cheese"
-    ],
+    "ingredients": ["Pasta", "Seasonal Vegetables", "Olive Oil", "Parmesan Cheese"],
     "allergyTags": ["Gluten", "Dairy"],
     "calories": 350,
     "category": "Pasta"
@@ -97,12 +74,7 @@
     "name": "Caesar Salad",
     "price": 7.99,
     "description": "Crisp romaine lettuce with creamy Caesar dressing",
-    "ingredients": [
-      "Romaine Lettuce",
-      "Caesar Dressing",
-      "Croutons",
-      "Parmesan Cheese"
-    ],
+    "ingredients": ["Romaine Lettuce", "Caesar Dressing", "Croutons", "Parmesan Cheese"],
     "allergyTags": ["Gluten", "Dairy", "Egg"],
     "calories": 150,
     "category": "Salad"
@@ -112,13 +84,7 @@
     "name": "Greek Salad",
     "price": 8.99,
     "description": "Fresh veggies with feta cheese and olives",
-    "ingredients": [
-      "Tomatoes",
-      "Cucumbers",
-      "Red Onions",
-      "Feta Cheese",
-      "Olives"
-    ],
+    "ingredients": ["Tomatoes", "Cucumbers", "Red Onions", "Feta Cheese", "Olives"],
     "allergyTags": ["Dairy"],
     "calories": 150,
     "category": "Salad"
@@ -138,12 +104,7 @@
     "name": "Tiramisu",
     "price": 6.99,
     "description": "Italian dessert with coffee-soaked ladyfingers and mascarpone cheese",
-    "ingredients": [
-      "Ladyfingers",
-      "Coffee",
-      "Mascarpone Cheese",
-      "Cocoa Powder"
-    ],
+    "ingredients": ["Ladyfingers", "Coffee", "Mascarpone Cheese", "Cocoa Powder"],
     "allergyTags": ["Gluten", "Dairy"],
     "calories": 350,
     "category": "Dessert"

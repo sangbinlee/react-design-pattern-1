@@ -1,5 +1,5 @@
-import { Item } from "./types";
-import { applyDiscountIfEligible } from "./utils";
+import { Item } from './types';
+import { applyDiscountIfEligible } from './utils';
 
 class ShoppingCart {
   items: Item[] = [];

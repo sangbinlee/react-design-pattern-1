@@ -1,6 +1,6 @@
-import React, { ReactNode } from "react";
-import { useService } from "./useService";
-import fetchPostById from "../../ch4/single-responsibilty-principle/fetchPostById";
+import React, { ReactNode } from 'react';
+import { useService } from './useService';
+import fetchPostById from '../../ch4/single-responsibilty-principle/fetchPostById';
 
 const DefaultLoading = () => <div>Loading...</div>;
 const DefaultError = () => <div>Error...</div>;
@@ -37,7 +37,7 @@ const BlogPost = ({ data }: { data: BlogPostType }) => {
   );
 };
 
-const fetchFunc = () => fetchPostById("blog-id");
+const fetchFunc = () => fetchPostById('blog-id');
 withSideEffect(fetchFunc, BlogPost);
 
 export default withSideEffect;

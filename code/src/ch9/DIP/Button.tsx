@@ -1,5 +1,5 @@
-import { ButtonProps } from "../types";
-import { SyntheticEvent } from "react";
+import { ButtonProps } from '../types';
+import { SyntheticEvent } from 'react';
 
 const Button = ({ onClick: provided, name, ...rest }: ButtonProps) => {
   const onClick = (e: SyntheticEvent<HTMLButtonElement>) => {

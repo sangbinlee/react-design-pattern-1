@@ -1,8 +1,8 @@
-import { ReactNode, SyntheticEvent, useCallback, useContext } from "react";
+import { ReactNode, SyntheticEvent, useCallback, useContext } from 'react';
 
 import InteractionContext, {
   InteractionMeasurement,
-} from "./InteractionContext";
+} from './InteractionContext';
 
 interface ButtonType {
   name: string;

@@ -1,5 +1,5 @@
-import { Product } from "../types";
-import LineItem from "./LineItem";
+import { Product } from '../types';
+import LineItem from './LineItem';
 
 const Cart = ({
   cartItems,

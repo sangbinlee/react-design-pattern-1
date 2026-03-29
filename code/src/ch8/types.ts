@@ -7,7 +7,7 @@ export type RemoteUser = {
     expiry: string;
   };
 };
-export type UserSubscription = "Basic" | "Standard" | "Premium" | "Enterprise";
+export type UserSubscription = 'Basic' | 'Standard' | 'Premium' | 'Enterprise';
 export type User = {
   id: string;
   name: string;

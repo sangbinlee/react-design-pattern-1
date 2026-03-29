@@ -7,6 +7,6 @@ export interface RemoteSearchResultItem {
   lat: number;
 
   local_names?: {
-    [key: string]: string
-  }
+    [key: string]: string;
+  };
 }

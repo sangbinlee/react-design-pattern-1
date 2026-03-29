@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const useService = <T>(fetch: () => Promise<T>) => {
   const [loading, setLoading] = useState<boolean>(false);

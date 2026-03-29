@@ -8,4 +8,3 @@ export type RemoteMenuItem = {
   allergyTags?: string[];
   calories?: number;
 };
-

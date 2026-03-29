@@ -78,12 +78,14 @@ ul li:hover {
   align-items: baseline;
 }
 
-.search-result .state, .country {
+.search-result .state,
+.country {
   font-size: 0.8rem;
   color: #777;
 }
 
-.search-result:hover .state, .country {
+.search-result:hover .state,
+.country {
   color: #eee;
 }
 

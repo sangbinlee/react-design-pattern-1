@@ -1,4 +1,4 @@
-import { IDiscountStrategy } from "./IDiscountStrategy";
+import { IDiscountStrategy } from './IDiscountStrategy';
 
 export class SpecialDiscountStrategy implements IDiscountStrategy {
   calculate(price: number): number {

@@ -1,5 +1,5 @@
-import React from "react";
-import { PanelProps } from "./types";
+import React from 'react';
+import { PanelProps } from './types';
 
 export const ExpandablePanel = ({
   isOpen,

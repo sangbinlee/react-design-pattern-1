@@ -1,7 +1,7 @@
-import { Notification } from "./Notification";
-import { SearchBox } from "./SearchBox";
-import { WeatherList } from "./WeatherList";
-import { Heading } from "./Heading";
+import { Notification } from './Notification';
+import { SearchBox } from './SearchBox';
+import { WeatherList } from './WeatherList';
+import { Heading } from './Heading';
 
 const WeatherApplication = () => {
   return (

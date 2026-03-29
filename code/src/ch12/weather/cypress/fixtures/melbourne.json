@@ -14,7 +14,7 @@
     "feels_like": 20.75,
     "humidity": 56,
     "pressure": 1009,
-    "temp": 20.00,
+    "temp": 20.0,
     "temp_max": 23.46,
     "temp_min": 18.71
   },

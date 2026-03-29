@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 
 const getNextIndexOf = (total: number) => (current: number) => {
   if (current === total - 1) {
@@ -22,9 +22,9 @@ export const useDropdown = <T extends { text: string }>(items: T[]) => {
   const [selectedItem, setSelectedItem] = useState<T | null>(null);
 
   const getAriaAttributes = () => ({
-    role: "combobox",
-    "aria-expanded": isOpen,
-    "aria-activedescendant": selectedItem ? selectedItem.text : undefined,
+    role: 'combobox',
+    'aria-expanded': isOpen,
+    'aria-activedescendant': selectedItem ? selectedItem.text : undefined,
   });
 
   const getNextIndex = getNextIndexOf(items.length);
@@ -35,29 +35,29 @@ export const useDropdown = <T extends { text: string }>(items: T[]) => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       switch (e.key) {
-        case "Enter":
-        case " ":
+        case 'Enter':
+        case ' ':
           e.preventDefault();
           setSelectedItem(items[selectedIndex]);
           setIsOpen((isOpen) => !isOpen);
           break;
-        case "ArrowDown":
+        case 'ArrowDown':
           e.preventDefault();
           setSelectedIndex(getNextIndex);
           break;
-        case "ArrowUp":
+        case 'ArrowUp':
           e.preventDefault();
           setSelectedIndex(getPreviousIndex);
           break;
-        case "Home":
+        case 'Home':
           e.preventDefault();
           setSelectedIndex(0);
           break;
-        case "End":
+        case 'End':
           e.preventDefault();
           setSelectedIndex(items.length - 1);
           break;
-        case "Escape":
+        case 'Escape':
           e.preventDefault();
           setIsOpen(false);
           if (dropdownRef.current) {
@@ -70,12 +70,12 @@ export const useDropdown = <T extends { text: string }>(items: T[]) => {
     };
 
     if (dropdownRef.current) {
-      dropdownRef.current.addEventListener("keydown", handleKeyDown);
+      dropdownRef.current.addEventListener('keydown', handleKeyDown);
     }
 
     return () => {
       if (dropdownRef.current) {
-        dropdownRef.current.removeEventListener("keydown", handleKeyDown);
+        dropdownRef.current.removeEventListener('keydown', handleKeyDown);
       }
     };
   }, [dropdownRef, getNextIndex, getPreviousIndex, items, selectedIndex]);

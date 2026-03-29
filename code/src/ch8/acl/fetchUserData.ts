@@ -1,4 +1,4 @@
-import { transformUser } from "./transformer";
+import { transformUser } from './transformer';
 
 export async function fetchUserData<T>(id: string) {
   const response = await fetch(`/api/users/${id}`);

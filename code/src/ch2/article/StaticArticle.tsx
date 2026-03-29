@@ -1,4 +1,4 @@
-import "./article.css";
+import './article.css';
 
 const StaticArticle = () => {
   return (

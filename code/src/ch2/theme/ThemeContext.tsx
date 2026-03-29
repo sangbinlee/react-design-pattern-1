@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 type Theme = {
-  theme: "light" | "dark";
+  theme: 'light' | 'dark';
   toggleTheme: () => void;
 };
 
 const ThemeContext = React.createContext<Theme>({
-  theme: "light",
+  theme: 'light',
   toggleTheme: () => {},
 });
 

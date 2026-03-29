@@ -1,20 +1,20 @@
-import { Product } from "../types";
-import ProductList from "./ProductList";
-import Cart from "./Cart";
-import React, { useState } from "react";
-import { Page, Header, Sidebar } from "../combined/Page";
+import { Product } from '../types';
+import ProductList from './ProductList';
+import Cart from './Cart';
+import React, { useState } from 'react';
+import { Page, Header, Sidebar } from '../combined/Page';
 
 const products: Product[] = [
   {
-    id: "p1",
-    name: "iPad",
-    image: "https://m.media-amazon.com/images/I/31NJHAAviGL._MCnd_AC_.jpg",
+    id: 'p1',
+    name: 'iPad',
+    image: 'https://m.media-amazon.com/images/I/31NJHAAviGL._MCnd_AC_.jpg',
     price: 666,
   },
   {
-    id: "p2",
-    name: "iPhone",
-    image: "https://m.media-amazon.com/images/I/31MX9scnEzL._MCnd_AC_.jpg",
+    id: 'p2',
+    name: 'iPhone',
+    image: 'https://m.media-amazon.com/images/I/31MX9scnEzL._MCnd_AC_.jpg',
     price: 777,
   },
 ];
@@ -34,12 +34,12 @@ const MyShop = () => {
         <Header
           title="My application"
           subtitle="Product page"
-          onClick={() => console.log("toggle header")}
+          onClick={() => console.log('toggle header')}
         />
       }
       sidebar={
         <Sidebar
-          links={["Home", "About", "Contact"]}
+          links={['Home', 'About', 'Contact']}
           onLinkClick={() => console.log(`toggle sidebar`)}
         />
       }

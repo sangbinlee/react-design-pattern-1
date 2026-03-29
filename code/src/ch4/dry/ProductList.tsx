@@ -1,6 +1,6 @@
-import { Product } from "../types";
-import "./product.css";
-import LineItem from "./LineItem";
+import { Product } from '../types';
+import './product.css';
+import LineItem from './LineItem';
 
 const ProductList = ({
   products,

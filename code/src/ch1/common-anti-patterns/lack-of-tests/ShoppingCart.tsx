@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Item } from "../../types";
+import { useState } from 'react';
+import { Item } from '../../types';
 
 function ShoppingCart() {
   const [items, setItems] = useState<Item[]>([]);

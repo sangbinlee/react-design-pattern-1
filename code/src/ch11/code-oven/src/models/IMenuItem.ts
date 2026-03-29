@@ -1,4 +1,4 @@
-import {IDiscountStrategy} from "./strategy/IDiscountStrategy";
+import { IDiscountStrategy } from './strategy/IDiscountStrategy';
 
 export interface IMenuItem {
   id: string;

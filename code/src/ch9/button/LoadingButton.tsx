@@ -1,8 +1,8 @@
-import React from "react";
-import Button from "./Button";
-import { ButtonProps } from "../types";
-import logo from "./logo.svg";
-import "./style.css";
+import React from 'react';
+import Button from './Button';
+import { ButtonProps } from '../types';
+import logo from './logo.svg';
+import './style.css';
 
 const LoadingButton = (props: ButtonProps) => {
   const { children, ...rest } = props;

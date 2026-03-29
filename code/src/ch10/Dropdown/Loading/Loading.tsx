@@ -1,5 +1,5 @@
-import "./Loading.css";
-import loading from "./loading.png";
+import './Loading.css';
+import loading from './loading.png';
 
 const Loading = () => {
   return (

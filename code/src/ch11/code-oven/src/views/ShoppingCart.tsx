@@ -1,6 +1,6 @@
-import React from "react";
-import { IMenuItem } from "../models/IMenuItem";
-import { useShoppingCart } from "../hooks/useShoppingCart";
+import React from 'react';
+import { IMenuItem } from '../models/IMenuItem';
+import { useShoppingCart } from '../hooks/useShoppingCart';
 
 const navigate = (route: string) => {};
 
@@ -8,7 +8,7 @@ export const ShoppingCart = ({ cartItems }: { cartItems: IMenuItem[] }) => {
   const { totalPrice, totalDiscount, placeOrder } = useShoppingCart(cartItems);
 
   const handleClick = () => {
-    placeOrder().then(() => navigate("/order-status"));
+    placeOrder().then(() => navigate('/order-status'));
   };
 
   return (

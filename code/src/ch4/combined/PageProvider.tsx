@@ -1,5 +1,5 @@
-import { PageProps } from "../types";
-import { PageContext } from "./PageContext";
+import { PageProps } from '../types';
+import { PageContext } from './PageContext';
 
 type PageProviderProps = {
   config: PageProps;

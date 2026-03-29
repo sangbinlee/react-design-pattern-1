@@ -1,7 +1,7 @@
-import { SearchResultItemType } from "../models/SearchResultItemType";
-import { useSearchCity } from "./useSearchCity";
-import React, { ChangeEvent, KeyboardEvent } from "react";
-import { SearchResultItem } from "./SearchResultItem";
+import { SearchResultItemType } from '../models/SearchResultItemType';
+import { useSearchCity } from './useSearchCity';
+import React, { ChangeEvent, KeyboardEvent } from 'react';
+import { SearchResultItem } from './SearchResultItem';
 
 export const SearchCityInput = ({
   onItemClick,
@@ -17,7 +17,7 @@ export const SearchCityInput = ({
   } = useSearchCity();
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       fetchCities();
     }
   };

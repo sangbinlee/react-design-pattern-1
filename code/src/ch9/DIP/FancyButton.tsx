@@ -1,5 +1,5 @@
-import Button from "../button/Button";
-import { SyntheticEvent } from "react";
+import Button from '../button/Button';
+import { SyntheticEvent } from 'react';
 
 type FancyButtonProps = {
   onClick: (e: SyntheticEvent<HTMLButtonElement>) => void;
@@ -11,7 +11,7 @@ const FancyButton = ({
 }: FancyButtonProps) => {
   const onClick = (e: SyntheticEvent<HTMLButtonElement>) => {
     //emit an event to the analytic server
-    console.log("sending analytics event to a remote server");
+    console.log('sending analytics event to a remote server');
     return originalOnClick(e);
   };
 

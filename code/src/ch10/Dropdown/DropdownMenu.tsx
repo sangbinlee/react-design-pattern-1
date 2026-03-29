@@ -1,5 +1,5 @@
-import { Item } from "./types";
-import React from "react";
+import { Item } from './types';
+import React from 'react';
 
 const MenuItem = ({ item }: { item: Item }) => {
   return (
@@ -30,7 +30,7 @@ export const DropdownMenu = ({
           key={item.id}
           onClick={() => updateSelectedItem(item)}
           className={`item-container ${
-            index === selectedIndex ? "highlighted" : ""
+            index === selectedIndex ? 'highlighted' : ''
           }`}
         >
           <MenuItem item={item} />

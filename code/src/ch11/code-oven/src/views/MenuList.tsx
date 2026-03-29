@@ -1,7 +1,7 @@
-import { useMenuItems } from "../hooks/useMenuItems";
-import React from "react";
-import { IMenuItem } from "../models/IMenuItem";
-import { SpecialDiscountStrategy } from "../models/strategy/SpecialDiscountStrategy";
+import { useMenuItems } from '../hooks/useMenuItems';
+import React from 'react';
+import { IMenuItem } from '../models/IMenuItem';
+import { SpecialDiscountStrategy } from '../models/strategy/SpecialDiscountStrategy';
 
 function isTodayFriday(): boolean {
   const today = new Date();

@@ -1,9 +1,9 @@
-import "tailwindcss/tailwind.css";
-import { useDropdown } from "./useDropdown";
-import { Item } from "./types";
-import React, { RefObject } from "react";
-import { useService } from "./useService";
-import { fetchUsers } from "./fetchUsers";
+import 'tailwindcss/tailwind.css';
+import { useDropdown } from './useDropdown';
+import { Item } from './types';
+import React, { RefObject } from 'react';
+import { useService } from './useService';
+import { fetchUsers } from './fetchUsers';
 
 const DropdownTailwind = () => {
   const { data: items } = useService<Item[] | null>(fetchUsers);
@@ -26,7 +26,7 @@ const DropdownTailwind = () => {
       {...getAriaAttributes()}
     >
       <button className="btn p-2 border rounded min-w-[240px]" tabIndex={0}>
-        {selectedItem ? selectedItem.text : "Select an item..."}
+        {selectedItem ? selectedItem.text : 'Select an item...'}
       </button>
 
       {isOpen && (
@@ -41,7 +41,7 @@ const DropdownTailwind = () => {
               aria-selected={index === selectedIndex}
               onClick={() => updateSelectedItem(item)}
               className={`p-2 border-b border-gray-200 flex items-center ${
-                index === selectedIndex ? "bg-gray-100" : ""
+                index === selectedIndex ? 'bg-gray-100' : ''
               } hover:bg-blue-100`}
             >
               <div className="flex flex-col">

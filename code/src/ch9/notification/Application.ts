@@ -1,5 +1,5 @@
-import { Notification } from "./Notification";
-import { EmailNotification } from "./EmailNotification";
+import { Notification } from './Notification';
+import { EmailNotification } from './EmailNotification';
 
 class Application {
   private notifier: Notification;
@@ -10,7 +10,7 @@ class Application {
 
   process() {
     // perform some actions to response user interaction
-    this.notifier.send("Some event happened", "info");
+    this.notifier.send('Some event happened', 'info');
   }
 }
 

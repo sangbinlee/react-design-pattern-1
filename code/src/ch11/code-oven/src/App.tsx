@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import "./App.css";
-import { MenuList } from "./views/MenuList";
-import { ShoppingCart } from "./views/ShoppingCart";
-import { IMenuItem } from "./models/IMenuItem";
+import React, { useState } from 'react';
+import './App.css';
+import { MenuList } from './views/MenuList';
+import { ShoppingCart } from './views/ShoppingCart';
+import { IMenuItem } from './models/IMenuItem';
 
 function App() {
   const [cartItems, setCartItems] = useState<IMenuItem[]>([]);

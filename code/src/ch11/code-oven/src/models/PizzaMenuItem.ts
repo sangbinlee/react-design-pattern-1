@@ -1,5 +1,5 @@
-import { BaseMenuItem } from "./BaseMenuItem";
-import { RemoteMenuItem } from "./RemoteMenuItem";
+import { BaseMenuItem } from './BaseMenuItem';
+import { RemoteMenuItem } from './RemoteMenuItem';
 
 export class PizzaMenuItem extends BaseMenuItem {
   private readonly toppings: number;

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 type TooltipProps = { name: string; role: string; children: ReactNode };
 

@@ -1,11 +1,11 @@
-import { Item } from "./types";
-import { useState } from "react";
+import { Item } from './types';
+import { useState } from 'react';
 
 export const useListItems = (items: Item[]) => {
   const [listItems, setListItems] = useState<Item[]>(items);
 
   const performSearch = (key: string) => {
-    if (key === "") {
+    if (key === '') {
       setListItems(items);
     }
 

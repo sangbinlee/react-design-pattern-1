@@ -1,4 +1,4 @@
-import { RemoteCityWeather } from "./RemoteCityWeather";
+import { RemoteCityWeather } from './RemoteCityWeather';
 
 export class CityWeather {
   private readonly _name: string;
@@ -21,7 +21,7 @@ export class CityWeather {
 
   get temperature() {
     if (this._temp == null) {
-      return "-/-";
+      return '-/-';
     }
     return `${Math.ceil(this._temp)}°C`;
   }

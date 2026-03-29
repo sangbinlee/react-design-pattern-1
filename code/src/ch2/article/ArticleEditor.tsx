@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useCallback, useState } from "react";
+import React, { ChangeEvent, FormEvent, useCallback, useState } from 'react';
 
 const ArticleEditor = ({ id }: { id: string }) => {
   const submitChange = useCallback(
@@ -6,10 +6,10 @@ const ArticleEditor = ({ id }: { id: string }) => {
       try {
         // Make a POST request to update the article item
         await fetch(`/api/articles/${id}`, {
-          method: "POST",
+          method: 'POST',
           body: JSON.stringify({ id, summary }),
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
         });
       } catch (error) {
@@ -27,7 +27,7 @@ const ArticleEditor = ({ id }: { id: string }) => {
 };
 
 const ArticleForm = ({ onSubmit }: { onSubmit: (summary: string) => void }) => {
-  const [summary, setSummary] = useState<string>("");
+  const [summary, setSummary] = useState<string>('');
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();

@@ -1,4 +1,4 @@
-import List from "./List";
+import List from './List';
 
 function ActiveList(props: { users: { isActive: boolean; name: string }[] }) {
   const filteredUsers = props.users.filter((user) => user.isActive);

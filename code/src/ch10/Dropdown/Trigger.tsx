@@ -1,5 +1,5 @@
-import React from "react";
-import "material-symbols";
+import React from 'react';
+import 'material-symbols';
 
 export const Trigger = ({
   text,

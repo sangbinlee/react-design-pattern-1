@@ -1,11 +1,11 @@
-import React from "react";
-import { User } from "../types";
+import React from 'react';
+import { User } from '../types';
 
 function UserProfile({ user }: { user: User }) {
-  const fullName = user && user.name ? user.name : "Loading…";
+  const fullName = user && user.name ? user.name : 'Loading…';
   const subscriptionLevel =
-    user && user.subscription ? user.subscription : "Basic";
-  const subscriptionExpiry = user && user.expire ? user.expire : "Never";
+    user && user.subscription ? user.subscription : 'Basic';
+  const subscriptionExpiry = user && user.expire ? user.expire : 'Never';
 
   return (
     <div>

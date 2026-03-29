@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export const LikeButton: React.FC = () => {
   const [isLiked, setIsLiked] = useState(false);
@@ -7,5 +7,5 @@ export const LikeButton: React.FC = () => {
     setIsLiked(!isLiked);
   };
 
-  return <button onClick={handleClick}>{isLiked ? "Unlike" : "Like"}</button>;
+  return <button onClick={handleClick}>{isLiked ? 'Unlike' : 'Like'}</button>;
 };

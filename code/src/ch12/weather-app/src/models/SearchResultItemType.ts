@@ -1,9 +1,9 @@
-import type { RemoteSearchResultItem } from "./RemoteSearchResultItem";
+import type { RemoteSearchResultItem } from './RemoteSearchResultItem';
 
 const countryMap = {
-  AU: "Australia",
-  US: "United States",
-  GB: "United Kingdom",
+  AU: 'Australia',
+  US: 'United States',
+  GB: 'United Kingdom',
 };
 
 class SearchResultItemType {

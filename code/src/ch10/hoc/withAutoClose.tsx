@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Toggleable } from "./types";
+import React, { useEffect, useState } from 'react';
+import { Toggleable } from './types';
 
 const withAutoClose =
   <T extends Partial<Toggleable>>(Component: React.FC<T>, duration = 2000) =>

@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
 export interface InteractionMeasurement {
   measure(name: string | undefined, timestamp?: number): void;

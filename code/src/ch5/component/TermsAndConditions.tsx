@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const TheLegalContent = () => {
   return <p>{/*...*/}</p>;
@@ -20,14 +20,14 @@ const CheckBox = ({ label, isChecked, onCheck }: CheckBoxProps) => {
 };
 
 type ButtonProps = {
-  type: "standard" | "primary" | "secondary";
+  type: 'standard' | 'primary' | 'secondary';
   label: string;
   disabled?: boolean;
 };
 
 const Button = ({ label, disabled = true }: ButtonProps) => {
   return (
-    <div style={{ margin: "0.5rem 0" }}>
+    <div style={{ margin: '0.5rem 0' }}>
       <button disabled={disabled}>{label}</button>
     </div>
   );

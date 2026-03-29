@@ -1,6 +1,6 @@
-import { Item } from "./types";
-import React, { useContext } from "react";
-import { SearchableListContext } from "./SearchableListContext";
+import { Item } from './types';
+import React, { useContext } from 'react';
+import { SearchableListContext } from './SearchableListContext';
 
 export const List = ({ items }: { items: Item[] }) => {
   const { onItemClicked } = useContext(SearchableListContext);

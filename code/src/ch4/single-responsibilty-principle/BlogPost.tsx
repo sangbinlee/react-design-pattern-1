@@ -1,6 +1,6 @@
-import React from "react";
-import { useFetchPost } from "./useFetchPost";
-import { LikeButton } from "./LikeButton";
+import React from 'react';
+import { useFetchPost } from './useFetchPost';
+import { LikeButton } from './LikeButton';
 
 const BlogPost = ({ id }: { id: string }) => {
   const post = useFetchPost(id);

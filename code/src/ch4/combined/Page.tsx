@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type HeaderProps = {
   title: string;
@@ -9,8 +9,8 @@ type HeaderProps = {
 const Header = ({ title, subtitle, onClick }: HeaderProps) => {
   return (
     <header onClick={onClick}>
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
+      <h2>{title}</h2>
+      <h3>{subtitle}</h3>
     </header>
   );
 };

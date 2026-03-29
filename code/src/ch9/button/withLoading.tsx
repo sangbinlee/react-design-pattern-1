@@ -1,7 +1,7 @@
-import React from "react";
-import { ButtonProps } from "../types";
-import logo from "./logo.svg";
-import "./style.css";
+import React from 'react';
+import { ButtonProps } from '../types';
+import logo from './logo.svg';
+import './style.css';
 
 const withLoading =
   (Component: React.FC<ButtonProps>) => (props: ButtonProps) => {

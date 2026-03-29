@@ -1,7 +1,7 @@
-import { IMenuItem } from "./IMenuItem";
-import { RemoteMenuItem } from "./RemoteMenuItem";
-import { NoDiscountStrategy } from "./strategy/NoDiscountStrategy";
-import { IDiscountStrategy } from "./strategy/IDiscountStrategy";
+import { IMenuItem } from './IMenuItem';
+import { RemoteMenuItem } from './RemoteMenuItem';
+import { NoDiscountStrategy } from './strategy/NoDiscountStrategy';
+import { IDiscountStrategy } from './strategy/IDiscountStrategy';
 
 export class BaseMenuItem implements IMenuItem {
   private readonly _id: string;

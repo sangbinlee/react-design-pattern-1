@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const checkAuthorization = () => {
   //checking local storage or send request to remote

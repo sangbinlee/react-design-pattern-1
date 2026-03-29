@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { User } from "../types";
-import { transformUser } from "../acl/transformer";
+import React, { useEffect, useState } from 'react';
+import { User } from '../types';
+import { transformUser } from '../acl/transformer';
 
 async function fetchUserData<T>(id: string) {
   const response = await fetch(`/api/users/${id}`);

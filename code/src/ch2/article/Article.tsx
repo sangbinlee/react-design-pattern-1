@@ -1,8 +1,8 @@
-import { ArticleType } from "./types";
-import React, { useContext } from "react";
-import ThemeContext from "../theme/ThemeContext";
+import { ArticleType } from './types';
+import React, { useContext } from 'react';
+import ThemeContext from '../theme/ThemeContext';
 
-import "./article.css";
+import './article.css';
 
 const Article = ({ heading, summary }: ArticleType) => {
   const { theme, toggleTheme } = useContext(ThemeContext);

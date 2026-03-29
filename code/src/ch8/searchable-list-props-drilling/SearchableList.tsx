@@ -1,6 +1,6 @@
-import React, { ChangeEvent, useContext, useState } from "react";
-import { SearchableListContext } from "./SearchableListContext";
-import { Item } from "./types";
+import React, { ChangeEvent, useContext, useState } from 'react';
+import { SearchableListContext } from './SearchableListContext';
+import { Item } from './types';
 
 const ListItem = ({ item }: { item: Item }) => {
   const { onItemClicked } = useContext(SearchableListContext);

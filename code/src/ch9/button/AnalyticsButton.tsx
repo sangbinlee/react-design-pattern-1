@@ -1,6 +1,6 @@
-import { ButtonProps } from "../types";
-import Button from "./Button";
-import React, { useEffect } from "react";
+import { ButtonProps } from '../types';
+import Button from './Button';
+import React, { useEffect } from 'react';
 
 const AnalyticsButton = (props: ButtonProps) => {
   const now = performance.now();

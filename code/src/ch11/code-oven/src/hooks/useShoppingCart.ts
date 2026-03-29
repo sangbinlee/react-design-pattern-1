@@ -1,19 +1,19 @@
-import { IMenuItem } from "../models/IMenuItem";
-import { useMemo } from "react";
+import { IMenuItem } from '../models/IMenuItem';
+import { useMemo } from 'react';
 
 export const useShoppingCart = (items: IMenuItem[]) => {
   const totalPrice = useMemo(
     () => items.reduce((acc, item) => (acc += item.price), 0),
-    [items]
+    [items],
   );
 
   const totalDiscount = useMemo(
     () => items.reduce((acc, item) => (acc += item.calculateDiscount()), 0),
-    [items]
+    [items],
   );
 
   const placeOrder = async () => {
-    const url = "https://api.code-oven.com/orders";
+    const url = 'https://api.code-oven.com/orders';
 
     const payload = {
       items: items,
@@ -22,9 +22,9 @@ export const useShoppingCart = (items: IMenuItem[]) => {
     };
 
     const result = await fetch(url, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(payload),
     });

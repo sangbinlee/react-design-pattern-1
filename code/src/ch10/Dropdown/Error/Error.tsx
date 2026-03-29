@@ -1,5 +1,5 @@
-import "./Error.css";
-import error from "./error.png";
+import './Error.css';
+import error from './error.png';
 
 const Error = () => {
   return (

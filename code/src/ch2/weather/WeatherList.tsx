@@ -1,4 +1,4 @@
-import { WeatherType } from "./types";
+import { WeatherType } from './types';
 
 const Weather = ({ cityName, temperature, weather }: WeatherType) => {
   return (

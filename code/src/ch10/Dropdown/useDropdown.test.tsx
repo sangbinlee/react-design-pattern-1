@@ -1,11 +1,11 @@
-import React, { RefObject } from "react";
-import "@testing-library/jest-dom";
-import userEvent from "@testing-library/user-event";
+import React, { RefObject } from 'react';
+import '@testing-library/jest-dom';
+import userEvent from '@testing-library/user-event';
 
-import { renderHook, act, render, screen } from "@testing-library/react";
-import { useDropdown } from "./useDropdown";
+import { renderHook, act, render, screen } from '@testing-library/react';
+import { useDropdown } from './useDropdown';
 
-const items = [{ text: "Apple" }, { text: "Orange" }, { text: "Banana" }];
+const items = [{ text: 'Apple' }, { text: 'Orange' }, { text: 'Banana' }];
 
 const SimpleDropdown = () => {
   const {
@@ -43,9 +43,9 @@ const SimpleDropdown = () => {
     </div>
   );
 };
-describe("useDropdown hook", () => {
-  describe("state management", () => {
-    it("should handle dropdown open/close state", () => {
+describe('useDropdown hook', () => {
+  describe('state management', () => {
+    it('should handle dropdown open/close state', () => {
       const { result } = renderHook(() => useDropdown(items));
 
       expect(result.current.isOpen).toBe(false);
@@ -63,7 +63,7 @@ describe("useDropdown hook", () => {
       expect(result.current.isOpen).toBe(false);
     });
 
-    it("should handle item selection", () => {
+    it('should handle item selection', () => {
       const { result } = renderHook(() => useDropdown(items));
 
       expect(result.current.selectedItem).toBeNull();
@@ -80,17 +80,17 @@ describe("useDropdown hook", () => {
     });
   });
 
-  describe("event handlers", () => {
-    it("trigger to toggle", async () => {
+  describe('event handlers', () => {
+    it('trigger to toggle', async () => {
       render(<SimpleDropdown />);
 
-      const trigger = screen.getByRole("button");
+      const trigger = screen.getByRole('button');
 
       expect(trigger).toBeInTheDocument();
 
       await userEvent.click(trigger);
 
-      const list = screen.getByRole("listbox");
+      const list = screen.getByRole('listbox');
       expect(list).toBeInTheDocument();
 
       await userEvent.click(trigger);
@@ -98,22 +98,22 @@ describe("useDropdown hook", () => {
       expect(list).not.toBeInTheDocument();
     });
 
-    it("select item by keyboard", async () => {
+    it('select item by keyboard', async () => {
       render(<SimpleDropdown />);
 
-      const trigger = screen.getByRole("button");
+      const trigger = screen.getByRole('button');
 
       expect(trigger).toBeInTheDocument();
 
       await userEvent.click(trigger);
 
-      const dropdown = screen.getByRole("combobox");
+      const dropdown = screen.getByRole('combobox');
       dropdown.focus();
 
-      await userEvent.type(dropdown, "{arrowdown}");
-      await userEvent.type(dropdown, "{enter}");
+      await userEvent.type(dropdown, '{arrowdown}');
+      await userEvent.type(dropdown, '{enter}');
 
-      await expect(screen.getByTestId("selected-item")).toHaveTextContent(
+      await expect(screen.getByTestId('selected-item')).toHaveTextContent(
         items[0].text,
       );
     });

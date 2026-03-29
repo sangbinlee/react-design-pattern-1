@@ -22,7 +22,7 @@ yarn start
 yarn test
 ```
 
-When doing TDD, you normally should have a terminal to watch and run your tests while you're making code changes. You can do that in your IDE, but I 
+When doing TDD, you normally should have a terminal to watch and run your tests while you're making code changes. You can do that in your IDE, but I
 found it useful to have a full-screen terminal on another monitor, especially when I have to see some error messages like an element cannot be found among HTML text wall.
 
 ---

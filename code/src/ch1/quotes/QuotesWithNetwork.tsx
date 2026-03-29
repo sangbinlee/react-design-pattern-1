@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 function Quotes() {
   const [quotes, setQuotes] = useState<string[]>([]);
@@ -8,10 +8,10 @@ function Quotes() {
   useEffect(() => {
     setIsLoading(true);
 
-    fetch("https://dummyjson.com/quotes")
+    fetch('https://dummyjson.com/quotes')
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Failed to fetch quotes");
+          throw new Error('Failed to fetch quotes');
         }
         return response.json();
       })

@@ -1,7 +1,7 @@
-import { UserDashboardProps } from "./types";
-import { UserProfile } from "./UserProfile";
-import { FriendList } from "./FriendList";
-import { PostList } from "./PostList";
+import { UserDashboardProps } from './types';
+import { UserProfile } from './UserProfile';
+import { FriendList } from './FriendList';
+import { PostList } from './PostList';
 
 function UserDashboard({ user, posts }: UserDashboardProps) {
   return (

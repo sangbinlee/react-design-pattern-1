@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { ArticleType } from "./types";
-import Article from "./Article";
+import { useEffect, useState } from 'react';
+import { ArticleType } from './types';
+import Article from './Article';
 
 const ArticleList = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
-      fetch("/api/articles")
+      fetch('/api/articles')
         .then((res) => res.json())
         .then((data) => setArticles(data));
     };
